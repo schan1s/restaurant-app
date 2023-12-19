@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Smythe&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Jimmy's Diner</h1>
+      <h2>The best burgers and pizzas in town.</h2>
+    </header>
+    <main>
+      <div id="container"></div>
+      <div id="order-container"></div>
+      <button id="complete-order-button">Complete Order</button>
+      <div id="credit-card-modal">
+        <div class="modal-content">
+          <button id="closeButton">x</button>
+          <p class="card-details">Enter Card Details</p>
+          <input class="input" placeholder="Enter your name" />
+          <input class="input" placeholder="Enter card number" />
+          <input class="input" placeholder="Enter your CVV" />
+          <button id="pay-btn">Pay</button>
+        </div>
+      </div>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
