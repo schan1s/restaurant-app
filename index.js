@@ -99,6 +99,21 @@ closeModalBtn.addEventListener("click", function () {
   document.getElementById("credit-card-modal").style.display = "none";
 });
 
+document.getElementById("thankyou-modal").style.display = "none";
+
+const payBtn = document.getElementById("pay-btn");
+
+payBtn.addEventListener("click", function () {
+  document.getElementById("credit-card-modal").style.display = "none";
+  document.getElementById("order-container").style.display = "none";
+  document.getElementById("complete-order-button").style.display = "none";
+  const thankYouEl = document.getElementById("thankyou-modal");
+  const name = document.getElementById("name-input").value;
+
+  thankYouEl.style.display = "block";
+  thankYouEl.innerHTML = `Thank you ${name}! Your order is on it's way`;
+});
+
 // const modalOverlay = document.createElement("div");
 // modalOverlay.id = "modal-overlay";
 // modalOverlay.style.display = "none";

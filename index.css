@@ -224,3 +224,13 @@ header {
   margin-bottom: 20px;
   padding: 0;
 }
+
+#thankyou-modal {
+  background-color: #ecfdf5;
+  font-size: 20px;
+  color: #065f46;
+  padding: 12px 30px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
